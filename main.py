@@ -47,4 +47,8 @@ def SeekSunnyStations() :
     # eventually check the next departing train (dep to destination) 
     
 
-print(SeekSunnyStations())
+stationsArray = SeekSunnyStations()
+
+SunnyStations = dict(enumerate(map(str, stationsArray)))
+
+print(SunnyStations)
